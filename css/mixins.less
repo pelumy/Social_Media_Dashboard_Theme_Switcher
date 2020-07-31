@@ -1,0 +1,128 @@
+@import "colors";
+@import "typography";
+
+.left(){
+    float: left;
+}
+
+.right(){
+    float: right;
+}
+
+.bolder(){
+    font-weight: @bolder;
+}
+
+.bold(){
+    font-weight: 500;
+}
+
+.mainPadding(){
+    // padding: 0 50px 0 50px;
+    // margin: auto;
+}
+
+.center(){
+    text-align: center;
+}
+
+.spaceOut(){
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: @lightTextColor;
+    font-size: @smallText;
+}
+
+.wordSpace(){
+    word-spacing: 2px;
+}
+
+.smallGreen(){
+    font-size: @smallNum;
+    color: @pryColor;
+    font-weight: 700;
+}
+
+.smallRed(){
+    font-size: @smallNum;
+    color: @secColor;
+    font-weight: 700;
+}
+
+.toggle(){
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    border-radius: 50px;
+    background-color: @lightToggleColor;
+    // outline: none;
+}
+
+.darkToggle(){
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    border-radius: 50px;
+    background-image: -webkit-gradient(linear, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+    background-image: -webkit-linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+    background-image: -moz-linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+
+
+    background-image: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+}
+
+.slider(){
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    // left: 0;
+    right: 0;
+    bottom: 0;
+    // -webkit-transition: .4s;
+    // transition: .4s;
+    height: 20px;
+    width: 20px;
+    background-color: @lightBgColor;
+    border-radius: 100px;
+
+}
+
+.sliderBefore(){
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 1px;
+    top: -4px;
+    background-color:@lightBgColor ;
+    // -webkit-transition: .4s;
+}
+
+.sliderDark(){
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    // -webkit-transition: .4s;
+    // transition: .4s;
+    height: 20px;
+    width: 20px;
+    background-color: @darkCardBgColor;
+    border-radius: 100px;
+
+}
+
+.sliderDarkBefore(){
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 1px;
+    top: -4px;
+    background-color: @darkCardBgColor;
+    // -webkit-transition: .4s;
+}

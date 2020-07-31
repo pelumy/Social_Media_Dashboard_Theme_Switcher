@@ -1,0 +1,215 @@
+@import (css) url("https://fonts.google.com/specimen/Inter:400, 700");
+@import "colors";
+@import "typography";
+@import "mixins";
+
+// *{
+//     margin: 0;
+//     padding: 0;
+// }
+
+.main{
+    width: @mainWidth;
+    background-color: @lightTopBgColor;
+    position: relative;
+    // padding: 0 50px 0 50px;
+
+    // & .header{
+    // position: absolute;
+    // // z-index: 0;
+    // top: 0;
+    // left: 0;
+    // }
+
+     
+
+    // .dark-white-text{
+    //     color: @darkWhiteTextColor;
+    // }
+}
+
+.container{
+    .mainPadding();
+
+    .card  {
+        .center(); 
+        background-color: @lightCardBgColor;
+
+    }
+
+    .left{
+        .left();
+    }
+    
+    .right{
+        .right();
+    }
+
+    .card-section{
+        background-color:@lightBgColor;
+        // padding: 0 50px 0 50px;
+
+    // position: absolute;
+    // z-index: 9;
+    // top: 0;
+    // left: 0;
+    }
+    
+}
+
+
+header{
+    height: @topHeight;
+    z-index: 0;
+
+    .left-header{
+        .left();
+        
+        & p{
+            .bold();
+            color: @lightTextColor;
+        }
+    }
+
+    .right-header{
+        display: flex;
+        justify-content: flex-end;
+        & p{
+        .right();
+        color: @lightTextColor;
+        
+        }
+    }
+
+    .dark-toggle{
+        .darkToggle();
+        & input{
+            display: none;
+        }
+
+        & .slider-dark{
+            .sliderDark();
+    
+            & :before{
+                .sliderDarkBefore();
+            }
+        }
+    }
+
+    .toggle{
+        .toggle();
+        & input{
+            display: none;
+        }
+
+        & .slider{
+            .slider();
+    
+            & :before{
+                .sliderBefore();
+            }
+        }
+
+        
+        
+    }
+}
+
+.sec-1{
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+    // position: absolute;
+    // top: 100px;
+
+
+    .card{
+        border-width: 3px 0 0 0;
+        .center();
+    }
+}
+
+section{
+
+    .bolder{
+        .bolder();
+        color: @lightTextColor;
+    }
+
+    .card-text{
+        color: @lightTextColor;
+        font-size: @cardText;
+        .bold();
+        .wordSpace();
+    }
+
+    .big-num{
+        .bolder();
+        font-size: @bigNum
+    }
+
+    .space-letter{
+        .spaceOut();
+    }
+
+    .small-red{
+        .smallRed();
+    }
+
+    .small-green{
+        .smallGreen();
+    }
+
+    
+
+    #fb-card{
+        border-top: @borderSize @borderStyle @fbColor ;
+        border-width: 3px 0 0 0;
+
+    }
+
+    #twit-card{
+        border-top: @borderSize @borderStyle @twitColor ;
+    }
+
+    #insta-card{
+        // border: 3px 0 0 0;
+        border-width: 4px 0 0 0;
+        border-top-left-radius: 5px ;
+
+        border-style: @borderStyle;
+        border-image: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+        border-image-slice: 1;
+    }
+
+    #ytube-card{
+        border-top: @borderSize @borderStyle @ytubeColor ;
+    }
+    
+}
+
+.sec-2{
+    margin: 0;
+    padding: 0;
+    // position: relative;
+    // top: 100px;
+    .space{
+        // color: @pryColor;
+        // font-weight: @bolder;
+        width: 3px;
+    }
+
+    .med-num{
+        font-size: @medNum;
+        font-weight: @bolder;
+    }
+
+    .align-bottom{
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
+    .card{
+        border-width: 0;
+    }
+}

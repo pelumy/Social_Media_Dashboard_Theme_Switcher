@@ -1,0 +1,179 @@
+@import url("https://fonts.google.com/specimen/Inter:400, 700");
+.main {
+  width: 100%;
+  background-color: hsl(225, 100%, 98%);
+  position: relative;
+}
+.container .card {
+  text-align: center;
+  background-color: hsl(227, 47%, 96%);
+}
+.container .left {
+  float: left;
+}
+.container .right {
+  float: right;
+}
+.container .card-section {
+  background-color: hsl(0, 0%, 100%);
+}
+header {
+  height: 40vh;
+  z-index: 0;
+}
+header .left-header {
+  float: left;
+}
+header .left-header p {
+  font-weight: 500;
+  color: hsl(228, 12%, 44%);
+}
+header .right-header {
+  display: flex;
+  justify-content: flex-end;
+}
+header .right-header p {
+  float: right;
+  color: hsl(228, 12%, 44%);
+}
+header .dark-toggle {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  border-radius: 50px;
+  background-image: -webkit-gradient(linear, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+  background-image: -webkit-linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+  background-image: -moz-linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+  background-image: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+}
+header .dark-toggle input {
+  display: none;
+}
+header .dark-toggle .slider-dark {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 20px;
+  width: 20px;
+  background-color: hsl(228, 28%, 20%);
+  border-radius: 100px;
+}
+header .dark-toggle .slider-dark :before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 1px;
+  top: -4px;
+  background-color: hsl(228, 28%, 20%);
+}
+header .toggle {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  border-radius: 50px;
+  background-color: hsl(230, 22%, 74%);
+}
+header .toggle input {
+  display: none;
+}
+header .toggle .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 20px;
+  width: 20px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 100px;
+}
+header .toggle .slider :before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 1px;
+  top: -4px;
+  background-color: hsl(0, 0%, 100%);
+}
+.sec-1 {
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+}
+.sec-1 .card {
+  border-width: 3px 0 0 0;
+  text-align: center;
+}
+section .bolder {
+  font-weight: 700;
+  color: hsl(228, 12%, 44%);
+}
+section .card-text {
+  color: hsl(228, 12%, 44%);
+  font-size: 12px;
+  font-weight: 500;
+  word-spacing: 2px;
+}
+section .big-num {
+  font-weight: 700;
+  color: hsl(228, 12%, 44%);
+  font-size: 30px;
+}
+section .space-letter {
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: hsl(228, 12%, 44%);
+  font-size: 12px;
+}
+section .small-red {
+  font-size: 12px;
+  color: hsl(356, 69%, 56%);
+  font-weight: 700;
+}
+section .small-green {
+  font-size: 12px;
+  color: hsl(163, 72%, 41%);
+  font-weight: 700;
+}
+section #fb-card {
+  border-top: 3px solid hsl(208, 92%, 53%);
+  border-width: 3px 0 0 0;
+}
+section #twit-card {
+  border-top: 3px solid hsl(203, 89%, 53%);
+}
+section #insta-card {
+  border-width: 4px 0 0 0;
+  border-top-left-radius: 5px ;
+  border-style: solid;
+  border-image: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+  border-image-slice: 1;
+}
+section #ytube-card {
+  border-top: 3px solid hsl(348, 97%, 39%);
+}
+.sec-2 {
+  margin: 0;
+  padding: 0;
+}
+.sec-2 .space {
+  width: 3px;
+}
+.sec-2 .med-num {
+  font-size: 20px;
+  font-weight: 700;
+}
+.sec-2 .align-bottom {
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.sec-2 .card {
+  border-width: 0;
+}

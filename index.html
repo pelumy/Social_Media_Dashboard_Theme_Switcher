@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+
+  <title>Social Media Dashboard with Theme Switcher</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <!-- <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> -->
+</head>
+
+<body>
+
+  <div class="container  pr-0 pl-0  col-12 ">
+
+    <div class="main header pt-3" id="main">
+
+      <header class=" row col-12 ">
+        <!-- left -->
+        <div class="col-md-6 left-header">
+          <h4 class="pl-3 dark-white-text">Social Media Dashboard</h4>
+          <p class="pl-3">Total Followers: 23,004</p>
+        </div>
+
+        <!-- right -->
+        <div class="col-md-6 right-header">
+          <!-- <div> -->
+          <p class="mr-md-2">Dark Mode</p>
+          <label for="toggle" class="toggle" id="toggle">
+            <input type="checkbox">
+            <span class="slider" id="slider"></span>
+          </label>
+          <!-- </div> -->
+
+
+        </div>
+
+      </header>
+
+    </div>
+
+
+    <div class=" card-section" id="card-section">
+      <!-- cards -->
+      <section class="container row col-12 sec-1 ">
+
+        <!-- fb -->
+        <div class="col-lg-3 col-md-6">
+          <div class="card" id="fb-card">
+            <div class="card-body">
+              <p class="card-text">
+                <span><img src="./images/icon-facebook.svg" alt="facebook-icon" /></span>
+                @nathanf
+              </p>
+              <h1 class="big-num dark-white-text">1987</h1>
+              <p class="space-letter">Followers</p>
+              <p class="pry small-green">
+                <span><img src="./images/icon-up.svg" alt="arrow-down" /></span>
+                12 Today
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- twitter -->
+        <div class="col-lg-3 col-md-6 mt-3 mt-md-0">
+          <div class="card" id="twit-card">
+            <div class="card-body">
+              <p class="card-text">
+                <span><img src="./images/icon-twitter.svg" alt="twitter-icon" /></span>
+                @nathanf
+              </p>
+              <h1 class="big-num dark-white-text">1044</h1>
+              <p class="space-letter">Followers</p>
+              <p class="pry small-green">
+                <span><img src="./images/icon-up.svg" alt="arrow-down" /></span>
+                99 Today
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- insta -->
+        <div class="col-lg-3 col-md-6 mt-3 mt-lg-0">
+          <div class="card" id="insta-card">
+            <div class="card-body">
+              <p class="card-text">
+                <span><img src="./images/icon-instagram.svg" alt="instagram-icon" /></span>
+                @realnathanf
+              </p>
+              <h1 class="big-num dark-white-text">11k</h1>
+              <p class="space-letter">Followers</p>
+              <p class="pry small-green">
+                <span><img src="./images/icon-up.svg" alt="arrow-down" /></span>
+                1099 Today
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- youtube -->
+        <div class="col-lg-3 col-md-6 mt-3 mt-lg-0">
+          <div class="card" id="ytube-card">
+            <div class="card-body">
+              <p class="card-text">
+                <span><img src="./images/icon-youtube.svg" alt="instagram-icon" /></span>
+                Nathan F.
+              </p>
+              <h1 class="big-num dark-white-text">8239</h1>
+              <p class="space-letter">Subscribers</p>
+              <p class="pry small-red">
+                <span><img src="./images/icon-down.svg" alt="arrow-up" /></span>
+                144 Today
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+      <!-- </div> -->
+
+      <section class="sec-2 mt-5">
+      
+      <div class="row col-12 m-0 p-0">
+
+          <!-- <div class="row col-12"> -->
+            <h5 class="pl-3 bolder dark-white-text ">Overview - Today</h5>
+          <!-- </div> -->
+
+          <div class="row col-12 mt-3 m-0 p-0">
+            <!-- first card -->
+            <div class="col-lg-3 col-md-6 ">
+              <div class="card">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-6">
+                      <p class="left card-text"> Page Views</p>
+                    </div>
+                    <div class="col-6">
+                      <p class="right"><img src="./images/icon-facebook.svg" alt="fb"></p>
+                    </div>
+                  </div>
+
+                  <div class="row align-bottom">
+                    <div class="col-6">
+                      <p class="left med-num dark-white-text"> 87</p>
+                    </div>
+                    <div class="col-6  ">
+                      <p class="right small-green"><span><img src="./images/icon-up.svg" alt="up-arrow"></span> <span
+                          class="space"></span> 3%</p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <!-- second card -->
+            <div class="col-lg-3 col-md-6 mt-3 mt-md-0">
+              <div class="card">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-6">
+                      <p class="left card-text"> Likes</p>
+                    </div>
+                    <div class="col-6">
+                      <p class="right"><img src="./images/icon-facebook.svg" alt="fb"></p>
+                    </div>
+                  </div>
+
+                  <div class="row align-bottom">
+                    <div class="col-6">
+                      <p class="left med-num dark-white-text"> 52</p>
+                    </div>
+                    <div class="col-6 space ">
+                      <p class="right small-red "><span><img src="./images/icon-down.svg" alt="up-arrow"></span> <span
+                          class="space"></span> 2%</p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+
+            <!-- third card -->
+            <div class="col-lg-3 col-md-6 mt-3 mt-lg-0">
+              <div class="card">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-6">
+                      <p class="left card-text"> Likes</p>
+                    </div>
+                    <div class="col-6">
+                      <p class="right"><img src="./images/icon-instagram.svg" alt="instagram"></p>
+                    </div>
+                  </div>
+
+                  <div class="row align-bottom">
+                    <div class="col-6">
+                      <p class="left med-num dark-white-text">5462</p>
+                    </div>
+                    <div class="col-6  ">
+                      <p class="right small-green"><span><img src="./images/icon-up.svg" alt="up-arrow"></span>
+                        <span class="space"></span> 2257%</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- fourth card -->
+            <div class="col-lg-3 col-md-6 mt-3 mt-lg-0">
+              <div class="card">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-6">
+                      <p class="left card-text">Profile Views</p>
+                    </div>
+                    <div class="col-6">
+                      <p class="right"><img src="./images/icon-instagram.svg" alt="instagram"></p>
+                    </div>
+                  </div>
+
+                  <div class="row align-bottom">
+                    <div class="col-6">
+                      <p class="left med-num dark-white-text">52k</p>
+                    </div>
+                    <div class="col-6  ">
+                      <p class="right small-green"><span><img src="./images/icon-up.svg" alt="up-arrow"></span>
+                        <span class="space"></span> 1375%</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- fifth card -->
+            <div class="col-lg-3 col-md-6 mt-3 mt-lg-4">
+              <div class="card">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-6">
+                      <p class="left card-text">Retweets</p>
+                    </div>
+                    <div class="col-6">
+                      <p class="right"><img src="./images/icon-twitter.svg" alt="twitter"></p>
+                    </div>
+                  </div>
+
+                  <div class="row align-bottom">
+                    <div class="col-6">
+                      <p class="left med-num dark-white-text">117</p>
+                    </div>
+                    <div class="col-6  ">
+                      <p class="right small-green"><span><img src="./images/icon-up.svg" alt="up-arrow"></span>
+                        <span class="space"></span> 303%</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- sixth card -->
+            <div class="col-lg-3 col-md-6 mt-3 mt-lg-4">
+              <div class="card">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-6">
+                      <p class="left card-text">Likes</p>
+                    </div>
+                    <div class="col-6">
+                      <p class="right"><img src="./images/icon-twitter.svg" alt="twitter"></p>
+                    </div>
+                  </div>
+
+                  <div class="row align-bottom">
+                    <div class="col-6">
+                      <p class="left med-num dark-white-text">507</p>
+                    </div>
+                    <div class="col-6  ">
+                      <p class="right small-green"><span><img src="./images/icon-up.svg" alt="up-arrow"></span>
+                        <span class="space"></span> 553%</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- seventh card -->
+            <div class="col-lg-3 col-md-6 mt-3 mt-lg-4">
+              <div class="card">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-6">
+                      <p class="left card-text">Likes</p>
+                    </div>
+                    <div class="col-6">
+                      <p class="right"><img src="./images/icon-youtube.svg" alt="youtube"></p>
+                    </div>
+                  </div>
+
+                  <div class="row align-bottom">
+                    <div class="col-6">
+                      <p class="left med-num dark-white-text">107</p>
+                    </div>
+                    <div class="col-6  ">
+                      <p class="right small-red"><span><img src="./images/icon-down.svg" alt="down-arrow"></span>
+                        <span class="space"></span> 19%</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- eigth card -->
+            <div class="col-lg-3 col-md-6 mt-3 mt-lg-4">
+              <div class="card">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-6">
+                      <p class="left card-text">Total Views</p>
+                    </div>
+                    <div class="col-6">
+                      <p class="right"><img src="./images/icon-youtube.svg" alt="youtube"></p>
+                    </div>
+                  </div>
+
+                  <div class="row align-bottom">
+                    <div class="col-6">
+                      <p class="left med-num dark-white-text">1407</p>
+                    </div>
+                    <div class="col-6  ">
+                      <p class="right small-red"><span><img src="./images/icon-down.svg" alt="down-arrow"></span>
+                        <span class="space"></span> 12%</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+
+
+
+
+          </div>
+        </section>
+
+      </div>
+    </div>
+
+
+    <!-- Likes
+    107
+    19%
+
+    Total Views
+    1407
+    12%
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>. -->
+    </div>
+
+  </div>
+<script src="./js/main.js"></script>
+</body>
+
+</html>
